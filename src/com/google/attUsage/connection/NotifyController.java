@@ -64,7 +64,7 @@ public class NotifyController {
 	
 	//Mailout message to Att line about their data usage
 	private void billnotify(String telNum, String bill, String period) throws UnsupportedEncodingException {
-		String sender = "chunyung@gmail.com", receiver = telNum + "@txt.att.net";
+		String sender = "XXXX@XXX.XX", receiver = telNum + "@txt.att.net";
 		String mailBody = "\nYour current At&t bill for " + period + " is: $" + bill;
 		mailout(sender, receiver, mailBody);
 	}
